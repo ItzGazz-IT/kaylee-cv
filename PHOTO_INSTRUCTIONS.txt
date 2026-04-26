@@ -1,0 +1,16 @@
+HOW TO ADD YOUR PHOTO
+=====================
+1. Name your photo file exactly:  profile.jpg
+2. Place it in this folder:       /public/profile.jpg
+3. Recommended size:              700×900 px (portrait), face/shoulders visible at the top
+
+The website will automatically display it in the hero section.
+The fallback "KS" initials will show until you add the file.
+
+HOW TO ADD YOUR CV PDF
+======================
+1. Export your CV as a PDF
+2. Name it exactly:               kaylee-schneider-cv.pdf
+3. Place it in this folder:       /public/kaylee-schneider-cv.pdf
+
+Both the "Download CV" buttons will then work automatically.
