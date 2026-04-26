@@ -4,6 +4,7 @@ import About      from './components/About'
 import Experience from './components/Experience'
 import Skills     from './components/Skills'
 import Education  from './components/Education'
+import Hobbies    from './components/Hobbies'
 import Contact    from './components/Contact'
 import Footer     from './components/Footer'
 import CursorGlow from './components/CursorGlow'
@@ -19,6 +20,7 @@ export default function App() {
         <Experience />
         <Skills />
         <Education />
+        <Hobbies />
         <Contact />
       </main>
       <Footer />
