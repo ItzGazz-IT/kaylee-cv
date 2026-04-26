@@ -744,86 +744,119 @@ Error generating stack: `+e.message+`
           .edu-card { flex-direction: column; padding: 24px 20px; gap: 18px; }
           .edu-header { flex-direction: column; }
         }
-      `})]})}function se(){let[e,t]=(0,l.useState)({name:``,email:``,message:``}),[n,r]=(0,l.useState)(null),[i,a]=v({threshold:.1}),o=e=>t(t=>({...t,[e.target.name]:e.target.value}));return(0,f.jsxs)(`section`,{id:`contact`,ref:i,className:`section section--alt`,children:[(0,f.jsxs)(`div`,{className:`container`,children:[(0,f.jsxs)(`div`,{className:`ct-title${a?` ct-revealed`:``}`,children:[(0,f.jsx)(`span`,{className:`label`,children:`Get in touch`}),(0,f.jsx)(`h2`,{className:`section-title`,children:`Contact Me`})]}),(0,f.jsxs)(`div`,{className:`contact-grid`,children:[(0,f.jsxs)(`div`,{className:`contact-info${a?` ct-revealed ct-delay1`:``}`,children:[(0,f.jsx)(`p`,{className:`contact-intro`,children:`Open to new opportunities and happy to connect. Reach out via the form or directly through the details below.`}),(0,f.jsx)(`div`,{className:`contact-items`,children:[{href:`mailto:kayleeschneider41@gmail.com`,label:`Email`,value:`kayleeschneider41@gmail.com`,icon:(0,f.jsxs)(`svg`,{width:`20`,height:`20`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.6`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`rect`,{x:`2`,y:`4`,width:`20`,height:`16`,rx:`2`}),(0,f.jsx)(`path`,{d:`m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7`})]})},{href:`tel:+27832617228`,label:`Phone`,value:`+27 83 261 7228`,icon:(0,f.jsx)(`svg`,{width:`20`,height:`20`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.6`,strokeLinecap:`round`,strokeLinejoin:`round`,children:(0,f.jsx)(`path`,{d:`M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 7.73 7.73l.87-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z`})})},{href:null,label:`Location`,value:`Johannesburg, South Africa`,icon:(0,f.jsxs)(`svg`,{width:`20`,height:`20`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.6`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`path`,{d:`M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z`}),(0,f.jsx)(`circle`,{cx:`12`,cy:`10`,r:`3`})]})}].map(e=>e.href?(0,f.jsxs)(`a`,{href:e.href,className:`contact-item`,children:[(0,f.jsx)(`div`,{className:`contact-item-icon`,children:e.icon}),(0,f.jsxs)(`div`,{children:[(0,f.jsx)(`p`,{className:`contact-item-label`,children:e.label}),(0,f.jsx)(`p`,{className:`contact-item-value`,children:e.value})]})]},e.label):(0,f.jsxs)(`div`,{className:`contact-item contact-item--static`,children:[(0,f.jsx)(`div`,{className:`contact-item-icon`,children:e.icon}),(0,f.jsxs)(`div`,{children:[(0,f.jsx)(`p`,{className:`contact-item-label`,children:e.label}),(0,f.jsx)(`p`,{className:`contact-item-value`,children:e.value})]})]},e.label))}),(0,f.jsxs)(`a`,{href:`/kaylee-cv/kaylee-schneider-cv.pdf`,download:!0,className:`btn btn--pink contact-download`,children:[(0,f.jsxs)(`svg`,{width:`16`,height:`16`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.8`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`path`,{d:`M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4`}),(0,f.jsx)(`polyline`,{points:`7 10 12 15 17 10`}),(0,f.jsx)(`line`,{x1:`12`,y1:`15`,x2:`12`,y2:`3`})]}),`Download Full CV (PDF)`]})]}),(0,f.jsx)(`div`,{className:`contact-form-wrap${a?` ct-revealed ct-delay2`:``}`,children:n===`ok`?(0,f.jsxs)(`div`,{className:`contact-success`,children:[(0,f.jsx)(`div`,{className:`contact-success-icon`,children:(0,f.jsxs)(`svg`,{width:`32`,height:`32`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.6`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`path`,{d:`M22 11.08V12a10 10 0 1 1-5.93-9.14`}),(0,f.jsx)(`polyline`,{points:`22 4 12 14.01 9 11.01`})]})}),(0,f.jsx)(`h3`,{children:`Message sent!`}),(0,f.jsx)(`p`,{children:`Your email client should have opened. I'll get back to you shortly.`}),(0,f.jsx)(`button`,{className:`btn btn--pink`,onClick:()=>r(null),children:`Send another`})]}):(0,f.jsxs)(`form`,{className:`contact-form`,onSubmit:t=>{t.preventDefault();let n=encodeURIComponent(`Portfolio enquiry from ${e.name}`),i=encodeURIComponent(`Name: ${e.name}\nEmail: ${e.email}\n\n${e.message}`);window.location.href=`mailto:kayleeschneider41@gmail.com?subject=${n}&body=${i}`,r(`ok`)},noValidate:!0,children:[(0,f.jsxs)(`div`,{className:`form-row`,children:[(0,f.jsxs)(`div`,{className:`form-field`,children:[(0,f.jsx)(`label`,{htmlFor:`name`,children:`Your name`}),(0,f.jsx)(`input`,{id:`name`,name:`name`,type:`text`,placeholder:`Jane Smith`,required:!0,value:e.name,onChange:o})]}),(0,f.jsxs)(`div`,{className:`form-field`,children:[(0,f.jsx)(`label`,{htmlFor:`email`,children:`Email address`}),(0,f.jsx)(`input`,{id:`email`,name:`email`,type:`email`,placeholder:`jane@example.com`,required:!0,value:e.email,onChange:o})]})]}),(0,f.jsxs)(`div`,{className:`form-field`,children:[(0,f.jsx)(`label`,{htmlFor:`message`,children:`Message`}),(0,f.jsx)(`textarea`,{id:`message`,name:`message`,rows:`5`,placeholder:`Hi Kaylee, I'd love to discuss an opportunity…`,required:!0,value:e.message,onChange:o})]}),(0,f.jsxs)(`button`,{type:`submit`,className:`btn btn--dark contact-submit`,children:[`Send message`,(0,f.jsxs)(`svg`,{width:`16`,height:`16`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.8`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`line`,{x1:`22`,y1:`2`,x2:`11`,y2:`13`}),(0,f.jsx)(`polygon`,{points:`22 2 15 22 11 13 2 9 22 2`})]})]})]})})]})]}),(0,f.jsx)(`style`,{children:`
-        .ct-title {
-          opacity: 0; transform: translateY(20px);
-          transition: opacity 0.5s ease, transform 0.5s ease;
+      `})]})}var se=[{id:`email`,href:`mailto:kayleeschneider41@gmail.com`,label:`Send an email`,value:`kayleeschneider41@gmail.com`,cta:`Open email app →`,bg:`linear-gradient(135deg, #fff0f3 0%, #fde8ec 100%)`,accent:`#d96c7c`,icon:(0,f.jsxs)(`svg`,{width:`32`,height:`32`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.4`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`rect`,{x:`2`,y:`4`,width:`20`,height:`16`,rx:`3`}),(0,f.jsx)(`path`,{d:`m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7`})]})},{id:`phone`,href:`tel:+27832617228`,label:`Give me a call`,value:`+27 83 261 7228`,cta:`Call now →`,bg:`linear-gradient(135deg, #fdf4f7 0%, #f9e4eb 100%)`,accent:`#c25568`,icon:(0,f.jsx)(`svg`,{width:`32`,height:`32`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.4`,strokeLinecap:`round`,strokeLinejoin:`round`,children:(0,f.jsx)(`path`,{d:`M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 7.73 7.73l.87-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z`})})},{id:`whatsapp`,href:`https://wa.me/27832617228?text=Hi%20Kaylee%2C%20I%20found%20your%20CV%20and%20would%20love%20to%20connect!`,label:`WhatsApp me`,value:`+27 83 261 7228`,cta:`Open WhatsApp →`,bg:`linear-gradient(135deg, #f0fbf5 0%, #d4f5e2 100%)`,accent:`#25a244`,icon:(0,f.jsx)(`svg`,{width:`32`,height:`32`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.4`,strokeLinecap:`round`,strokeLinejoin:`round`,children:(0,f.jsx)(`path`,{d:`M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z`})})}];function ce(){let[e,t]=(0,l.useState)(!1),[n,r]=v({threshold:.1});return(0,f.jsxs)(`section`,{id:`contact`,ref:n,className:`section section--alt ct-section`,children:[(0,f.jsxs)(`div`,{className:`container`,children:[(0,f.jsxs)(`div`,{className:`ct-head${r?` ct-in`:``}`,children:[(0,f.jsx)(`span`,{className:`label`,children:`Let’s connect`}),(0,f.jsxs)(`h2`,{className:`ct-title-big`,children:[`Ready to work`,(0,f.jsx)(`br`,{}),(0,f.jsx)(`em`,{children:`together?`})]}),(0,f.jsx)(`p`,{className:`ct-sub`,children:`One click is all it takes. No forms, no hassle.`})]}),(0,f.jsx)(`div`,{className:`ct-cards`,children:se.map((e,t)=>(0,f.jsxs)(`a`,{href:e.href,target:e.id===`whatsapp`?`_blank`:void 0,rel:e.id===`whatsapp`?`noopener noreferrer`:void 0,className:`ct-card${r?` ct-card-in`:``}`,style:{"--bg":e.bg,"--accent":e.accent,"--i":t},children:[(0,f.jsx)(`div`,{className:`ct-card-icon`,style:{color:e.accent,border:`1.5px solid ${e.accent}33`},children:e.icon}),(0,f.jsxs)(`div`,{className:`ct-card-body`,children:[(0,f.jsx)(`p`,{className:`ct-card-label`,children:e.label}),(0,f.jsx)(`p`,{className:`ct-card-value`,children:e.value})]}),(0,f.jsx)(`span`,{className:`ct-card-cta`,style:{color:e.accent},children:e.cta}),(0,f.jsx)(`div`,{className:`ct-card-glow`})]},e.id))}),(0,f.jsxs)(`div`,{className:`ct-copy${r?` ct-in ct-in--d3`:``}`,children:[(0,f.jsx)(`span`,{className:`ct-copy-text`,children:`kayleeschneider41@gmail.com`}),(0,f.jsx)(`button`,{className:`ct-copy-btn${e?` ct-copy-btn--done`:``}`,onClick:async()=>{try{await navigator.clipboard.writeText(`kayleeschneider41@gmail.com`),t(!0),setTimeout(()=>t(!1),2200)}catch{}},children:e?(0,f.jsxs)(f.Fragment,{children:[(0,f.jsx)(`svg`,{width:`14`,height:`14`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2.2`,strokeLinecap:`round`,strokeLinejoin:`round`,children:(0,f.jsx)(`polyline`,{points:`20 6 9 17 4 12`})}),` Copied!`]}):(0,f.jsxs)(f.Fragment,{children:[(0,f.jsxs)(`svg`,{width:`14`,height:`14`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.8`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`rect`,{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`}),(0,f.jsx)(`path`,{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`})]}),` Copy email`]})})]}),(0,f.jsxs)(`div`,{className:`ct-download${r?` ct-in ct-in--d4`:``}`,children:[(0,f.jsxs)(`a`,{href:`/kaylee-cv/kaylee-schneider-cv.pdf`,download:!0,className:`ct-dl-btn`,children:[(0,f.jsxs)(`svg`,{width:`18`,height:`18`,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.7`,strokeLinecap:`round`,strokeLinejoin:`round`,children:[(0,f.jsx)(`path`,{d:`M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4`}),(0,f.jsx)(`polyline`,{points:`7 10 12 15 17 10`}),(0,f.jsx)(`line`,{x1:`12`,y1:`15`,x2:`12`,y2:`3`})]}),`Download Full CV (PDF)`]}),(0,f.jsx)(`p`,{className:`ct-dl-note`,children:`Johannesburg, South Africa · Available immediately`})]})]}),(0,f.jsx)(`style`,{children:`
+        .ct-head, .ct-copy, .ct-download {
+          opacity: 0; transform: translateY(22px);
+          transition: opacity 0.55s ease, transform 0.55s ease;
         }
-        .ct-revealed { opacity: 1 !important; transform: none !important; }
-        .ct-delay1 { transition-delay: 0.15s !important; }
-        .ct-delay2 { transition-delay: 0.28s !important; }
+        .ct-in { opacity: 1 !important; transform: none !important; }
+        .ct-in--d3 { transition-delay: 0.38s !important; }
+        .ct-in--d4 { transition-delay: 0.52s !important; }
 
-        .contact-grid {
-          display: grid; grid-template-columns: 1fr 1fr;
-          gap: 48px; align-items: start;
+        .ct-section { overflow: hidden; }
+        .ct-head { text-align: center; margin-bottom: 52px; }
+        .ct-title-big {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: clamp(2.8rem, 6vw, 5rem);
+          font-weight: 400; line-height: 1.05;
+          color: var(--charcoal); margin-bottom: 14px;
         }
-        .contact-info, .contact-form-wrap {
-          opacity: 0; transform: translateY(28px);
-          transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .contact-intro { font-size: 15px; color: var(--mid); line-height: 1.75; margin-bottom: 28px; }
-        .contact-items { display: flex; flex-direction: column; gap: 4px; margin-bottom: 28px; }
+        .ct-title-big em { color: var(--pink-500); font-style: italic; }
+        .ct-sub { font-size: 15px; color: var(--light-txt); letter-spacing: 0.03em; }
 
-        .contact-item {
-          display: flex; align-items: center; gap: 14px;
-          padding: 16px; background: var(--white);
-          border: 1px solid var(--border); border-radius: 14px;
+        .ct-cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 18px;
+          margin-bottom: 20px;
+        }
+        .ct-card {
+          position: relative;
+          display: flex; flex-direction: column;
+          gap: 14px; overflow: hidden;
+          padding: 28px 24px 24px;
+          border-radius: 24px;
+          background: var(--bg);
+          border: 1px solid rgba(0,0,0,0.06);
           text-decoration: none; color: inherit;
-          transition: box-shadow 0.2s, transform 0.2s;
+          opacity: 0; transform: translateY(32px);
+          transition:
+            opacity 0.55s ease calc(var(--i) * 0.1s),
+            transform 0.55s ease calc(var(--i) * 0.1s),
+            box-shadow 0.25s ease,
+            scale 0.25s ease;
         }
-        .contact-item:not(.contact-item--static):hover {
-          box-shadow: 0 6px 24px rgba(217,108,124,0.14);
-          transform: translateY(-2px);
+        .ct-card-in { opacity: 1 !important; transform: none !important; }
+        .ct-card:hover {
+          box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+          scale: 1.025;
         }
-        .contact-item-icon {
-          width: 42px; height: 42px; border-radius: 50%;
-          background: var(--pink-100); color: var(--pink-500);
+        .ct-card-glow {
+          position: absolute; inset: 0; border-radius: 24px;
+          background: radial-gradient(circle at 80% 20%, var(--accent, #d96c7c) 0%, transparent 60%);
+          opacity: 0; transition: opacity 0.3s;
+          pointer-events: none; mix-blend-mode: multiply;
+        }
+        .ct-card:hover .ct-card-glow { opacity: 0.12; }
+
+        .ct-card-icon {
+          width: 62px; height: 62px; border-radius: 18px;
+          background: rgba(255,255,255,0.75);
           display: flex; align-items: center; justify-content: center; flex-shrink: 0;
         }
-        .contact-item-label { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light-txt); margin-bottom: 2px; }
-        .contact-item-value { font-size: 13px; color: var(--charcoal); }
-        .contact-download { width: 100%; justify-content: center; }
+        .ct-card-body { flex: 1; }
+        .ct-card-label {
+          font-size: 13px; font-weight: 600;
+          letter-spacing: 0.06em; text-transform: uppercase;
+          color: var(--charcoal); margin-bottom: 4px;
+        }
+        .ct-card-value { font-size: 14px; color: var(--mid); }
+        .ct-card-cta {
+          font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+          transition: letter-spacing 0.25s;
+        }
+        .ct-card:hover .ct-card-cta { letter-spacing: 0.1em; }
 
-        .contact-form-wrap {
-          background: var(--white); border: 1px solid var(--border);
-          border-radius: 24px; padding: 36px;
-        }
-        .contact-form { display: flex; flex-direction: column; gap: 18px; }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-        .form-field { display: flex; flex-direction: column; gap: 7px; }
-        .form-field label { font-size: 13px; font-weight: 500; color: var(--charcoal); }
-        .form-field input, .form-field textarea {
-          font-family: 'DM Sans', sans-serif; font-size: 14px;
-          color: var(--charcoal); background: var(--pink-50);
-          border: 1.5px solid var(--border); border-radius: 12px;
-          padding: 12px 14px; outline: none; resize: none;
-          transition: border-color 0.2s, box-shadow 0.2s;
-        }
-        .form-field input::placeholder, .form-field textarea::placeholder { color: var(--light-txt); }
-        .form-field input:focus, .form-field textarea:focus {
-          border-color: var(--pink-400);
-          box-shadow: 0 0 0 4px rgba(217,108,124,0.1);
-        }
-        .contact-submit { width: 100%; justify-content: center; }
-
-        .contact-success {
-          display: flex; flex-direction: column; align-items: center;
-          text-align: center; gap: 14px; padding: 20px 0;
-        }
-        .contact-success-icon {
-          width: 68px; height: 68px; border-radius: 50%;
-          background: var(--pink-100); color: var(--pink-500);
+        .ct-copy {
           display: flex; align-items: center; justify-content: center;
+          gap: 14px; flex-wrap: wrap;
+          background: var(--white); border: 1px solid var(--border);
+          border-radius: 50px; padding: 14px 24px; margin-bottom: 20px;
         }
-        .contact-success h3 { font-size: 1.5rem; color: var(--charcoal); }
-        .contact-success p { font-size: 14px; color: var(--mid); max-width: 260px; }
+        .ct-copy-text { font-size: 14px; color: var(--mid); letter-spacing: 0.02em; }
+        .ct-copy-btn {
+          display: inline-flex; align-items: center; gap: 7px;
+          font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600;
+          letter-spacing: 0.06em; cursor: pointer;
+          background: var(--pink-100); color: var(--pink-600);
+          border: 1.5px solid var(--pink-300); border-radius: 50px;
+          padding: 8px 18px;
+          transition: background 0.2s, transform 0.2s;
+        }
+        .ct-copy-btn:hover { background: var(--pink-200); transform: scale(1.04); }
+        .ct-copy-btn--done { background: #d4f5e2 !important; color: #1a7a3c !important; border-color: #a8e6c0 !important; }
 
-        @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
-        @media (max-width: 560px) {
-          .form-row { grid-template-columns: 1fr; }
-          .contact-form-wrap { padding: 24px 18px; }
+        .ct-download { text-align: center; }
+        .ct-dl-btn {
+          display: inline-flex; align-items: center; gap: 10px;
+          font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500;
+          letter-spacing: 0.06em; padding: 16px 36px;
+          border-radius: 50px; background: var(--charcoal); color: var(--white);
+          text-decoration: none; margin-bottom: 14px;
+          transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
         }
-      `})]})}function ce(){let e=new Date().getFullYear();return(0,f.jsxs)(`footer`,{className:`footer`,children:[(0,f.jsxs)(`div`,{className:`container footer-inner`,children:[(0,f.jsx)(`span`,{className:`footer-name`,children:`Kaylee Schneider`}),(0,f.jsxs)(`p`,{className:`footer-copy`,children:[`© `,e,` · Johannesburg, South Africa`]}),(0,f.jsxs)(`div`,{className:`footer-links`,children:[(0,f.jsx)(`a`,{href:`mailto:kayleeschneider41@gmail.com`,className:`footer-link`,children:`Email`}),(0,f.jsx)(`a`,{href:`tel:+27832617228`,className:`footer-link`,children:`Phone`}),(0,f.jsx)(`a`,{href:`#hero`,className:`footer-link`,children:`Back to top ↑`})]})]}),(0,f.jsx)(`style`,{children:`
+        .ct-dl-btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 14px 36px rgba(0,0,0,0.22);
+          background: #2d2d2d;
+        }
+        .ct-dl-note { font-size: 13px; color: var(--light-txt); letter-spacing: 0.04em; }
+
+        @media (max-width: 860px) { .ct-cards { grid-template-columns: 1fr; } }
+        @media (max-width: 560px) {
+          .ct-copy { flex-direction: column; border-radius: 20px; text-align: center; }
+        }
+      `})]})}function le(){let e=new Date().getFullYear();return(0,f.jsxs)(`footer`,{className:`footer`,children:[(0,f.jsxs)(`div`,{className:`container footer-inner`,children:[(0,f.jsx)(`span`,{className:`footer-name`,children:`Kaylee Schneider`}),(0,f.jsxs)(`p`,{className:`footer-copy`,children:[`© `,e,` · Johannesburg, South Africa`]}),(0,f.jsxs)(`div`,{className:`footer-links`,children:[(0,f.jsx)(`a`,{href:`mailto:kayleeschneider41@gmail.com`,className:`footer-link`,children:`Email`}),(0,f.jsx)(`a`,{href:`tel:+27832617228`,className:`footer-link`,children:`Phone`}),(0,f.jsx)(`a`,{href:`#hero`,className:`footer-link`,children:`Back to top ↑`})]})]}),(0,f.jsx)(`style`,{children:`
         .footer {
           background: var(--charcoal);
           padding: 48px 0;
@@ -862,7 +895,7 @@ Error generating stack: `+e.message+`
           .footer-inner { flex-direction: column; text-align: center; }
           .footer-links { flex-wrap: wrap; justify-content: center; }
         }
-      `})]})}function le(){let e=(0,l.useRef)(null);return(0,l.useEffect)(()=>{let t=e.current;if(!t)return;let n=-200,r=-200,i=-200,a=-200,o,s=e=>{n=e.clientX,r=e.clientY};window.addEventListener(`mousemove`,s,{passive:!0});let c=()=>{i+=(n-i)*.1,a+=(r-a)*.1,t.style.transform=`translate(${i-200}px, ${a-200}px)`,o=requestAnimationFrame(c)};return o=requestAnimationFrame(c),()=>{window.removeEventListener(`mousemove`,s),cancelAnimationFrame(o)}},[]),(0,f.jsxs)(f.Fragment,{children:[(0,f.jsx)(`div`,{ref:e,className:`cursor-glow`,"aria-hidden":`true`}),(0,f.jsx)(`style`,{children:`
+      `})]})}function ue(){let e=(0,l.useRef)(null);return(0,l.useEffect)(()=>{let t=e.current;if(!t)return;let n=-200,r=-200,i=-200,a=-200,o,s=e=>{n=e.clientX,r=e.clientY};window.addEventListener(`mousemove`,s,{passive:!0});let c=()=>{i+=(n-i)*.1,a+=(r-a)*.1,t.style.transform=`translate(${i-200}px, ${a-200}px)`,o=requestAnimationFrame(c)};return o=requestAnimationFrame(c),()=>{window.removeEventListener(`mousemove`,s),cancelAnimationFrame(o)}},[]),(0,f.jsxs)(f.Fragment,{children:[(0,f.jsx)(`div`,{ref:e,className:`cursor-glow`,"aria-hidden":`true`}),(0,f.jsx)(`style`,{children:`
         .cursor-glow {
           position: fixed;
           top: 0; left: 0;
@@ -875,4 +908,4 @@ Error generating stack: `+e.message+`
           transition: opacity 0.3s;
         }
         @media (hover: none) { .cursor-glow { display: none; } }
-      `})]})}function ue(){return(0,f.jsxs)(f.Fragment,{children:[(0,f.jsx)(le,{}),(0,f.jsx)(m,{}),(0,f.jsxs)(`main`,{children:[(0,f.jsx)(_,{}),(0,f.jsx)(ee,{}),(0,f.jsx)(te,{}),(0,f.jsx)(ie,{}),(0,f.jsx)(oe,{}),(0,f.jsx)(se,{})]}),(0,f.jsx)(ce,{})]})}(0,u.createRoot)(document.getElementById(`root`)).render((0,f.jsx)(l.StrictMode,{children:(0,f.jsx)(ue,{})}));
+      `})]})}function T(){return(0,f.jsxs)(f.Fragment,{children:[(0,f.jsx)(ue,{}),(0,f.jsx)(m,{}),(0,f.jsxs)(`main`,{children:[(0,f.jsx)(_,{}),(0,f.jsx)(ee,{}),(0,f.jsx)(te,{}),(0,f.jsx)(ie,{}),(0,f.jsx)(oe,{}),(0,f.jsx)(ce,{})]}),(0,f.jsx)(le,{})]})}(0,u.createRoot)(document.getElementById(`root`)).render((0,f.jsx)(l.StrictMode,{children:(0,f.jsx)(T,{})}));
