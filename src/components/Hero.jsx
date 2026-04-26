@@ -281,7 +281,7 @@ export default function Hero() {
         .hero-photo {
           width: 100%; height: 100%;
           object-fit: cover;
-          object-position: 10% 40%;
+          object-position: 2% 55%;
           transition: transform 0.6s ease;
         }
         .hero-photo-frame:hover .hero-photo { transform: scale(1.04); }
