@@ -110,6 +110,7 @@ export default function Hero() {
               src="/kaylee-cv/profile.jpg"
               alt="Kaylee Schneider"
               className="hero-photo"
+              onLoad={e  => { e.target.nextSibling.style.display = 'none' }}
               onError={e => { e.target.style.display = 'none' }}
             />
             <div className="hero-photo-fallback">KS</div>
@@ -279,7 +280,7 @@ export default function Hero() {
         .hero-photo {
           width: 100%; height: 100%;
           object-fit: cover;
-          object-position: top center;
+          object-position: center 15%;
           transition: transform 0.6s ease;
         }
         .hero-photo-frame:hover .hero-photo { transform: scale(1.04); }
