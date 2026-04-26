@@ -356,7 +356,7 @@ Error generating stack: `+e.message+`
         .hero-photo {
           width: 100%; height: 100%;
           object-fit: cover;
-          object-position: center 15%;
+          object-position: 34% 15%;
           transition: transform 0.6s ease;
         }
         .hero-photo-frame:hover .hero-photo { transform: scale(1.04); }
