@@ -42,7 +42,20 @@ export default function About() {
               keep businesses running smoothly.
             </p>
             <div className="about-tags">
-              {['Accounts Payable','Sage','Microsoft Excel','EFT Payments','Invoice Processing','Supplier Relations'].map(t => (
+              {[
+                'Accounts Payable',
+                'Creditor Reconciliation',
+                'EFT Payments',
+                'Invoice Processing',
+                'Bank Reconciliation',
+                'Supplier Relations',
+                'Vendor Management',
+                'Sage Accounting',
+                'Microsoft Excel',
+                'Age Analysis',
+                'Purchase Orders',
+                'Financial Administration',
+              ].map(t => (
                 <span key={t} className="tag">{t}</span>
               ))}
             </div>

@@ -1,19 +1,39 @@
 import { useScrollReveal } from '../hooks/useAnimations'
 
 const techSkills = [
-  { name: 'Sage',              level: 90 },
-  { name: 'Microsoft Excel',   level: 88 },
-  { name: 'Accounts Payable',  level: 95 },
-  { name: 'Invoice Processing',level: 92 },
-  { name: 'Data Entry',        level: 90 },
+  { name: 'Accounts Payable',       level: 95 },
+  { name: 'Invoice Processing',     level: 92 },
+  { name: 'EFT Payments',           level: 92 },
+  { name: 'Creditor Reconciliation',level: 90 },
+  { name: 'Sage Accounting',        level: 90 },
+  { name: 'Bank Reconciliation',    level: 86 },
+  { name: 'Microsoft Excel',        level: 88 },
+  { name: 'Data Entry & Reporting', level: 90 },
 ]
 
 const coreSkills = [
   'Attention to Detail',
-  'Communication',
-  'Problem Solving',
   'Time Management',
   'Organisational Skills',
+  'Communication',
+  'Problem Solving',
+  'Adaptability',
+  'Confidentiality & Discretion',
+  'Teamwork & Collaboration',
+  'Multi-tasking Under Pressure',
+]
+
+const tools = [
+  { name: 'Sage',         color: '#0e7c46' },
+  { name: 'Microsoft Excel',   color: '#1d6f42' },
+  { name: 'Microsoft Word',    color: '#2b579a' },
+  { name: 'Microsoft Outlook', color: '#0072c6' },
+  { name: 'Microsoft Teams',   color: '#5558af' },
+  { name: 'Microsoft PowerPoint', color: '#d24726' },
+  { name: 'Google Workspace',  color: '#4285f4' },
+  { name: 'EFT Banking Systems', color: '#d96c7c' },
+  { name: 'Purchase Orders',   color: '#7c5cbf' },
+  { name: 'Age Analysis',      color: '#2e8b57' },
 ]
 
 const languages = [
@@ -29,7 +49,7 @@ export default function Skills() {
       <div className="container">
         <div className={`skills-title-wrap${visible ? ' sk-revealed' : ''}`}>
           <span className="label">Capabilities</span>
-          <h2 className="section-title">Skills & Languages</h2>
+          <h2 className="section-title">Skills &amp; Expertise</h2>
         </div>
 
         <div className="skills-grid">
@@ -38,7 +58,7 @@ export default function Skills() {
             <h3 className="skills-card-title">Technical Skills</h3>
             <div className="skill-bars">
               {techSkills.map((s, i) => (
-                <div key={s.name} className="skill-bar-item" style={{ '--bar-delay': `${0.2 + i * 0.1}s` }}>
+                <div key={s.name} className="skill-bar-item">
                   <div className="skill-bar-label">
                     <span>{s.name}</span>
                     <span className="skill-bar-pct">{s.level}%</span>
@@ -46,7 +66,7 @@ export default function Skills() {
                   <div className="skill-bar-track">
                     <div
                       className={`skill-bar-fill${visible ? ' skill-bar-fill--go' : ''}`}
-                      style={{ '--fill-w': `${s.level}%`, '--bar-delay': `${0.3 + i * 0.12}s` }}
+                      style={{ '--fill-w': `${s.level}%`, '--bar-delay': `${0.2 + i * 0.1}s` }}
                     />
                   </div>
                 </div>
@@ -63,7 +83,7 @@ export default function Skills() {
                   <div
                     key={s}
                     className={`core-skill-item${visible ? ' core-visible' : ''}`}
-                    style={{ '--cs-delay': `${0.4 + i * 0.08}s` }}
+                    style={{ '--cs-delay': `${0.35 + i * 0.07}s` }}
                   >
                     <div className="core-skill-icon">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
@@ -91,30 +111,48 @@ export default function Skills() {
             </div>
           </div>
         </div>
+
+        {/* Software & Tools full-width row */}
+        <div className={`skills-card tools-card sk-card-4${visible ? ' sk-revealed' : ''}`}>
+          <h3 className="skills-card-title">Software &amp; Tools</h3>
+          <div className="tools-grid">
+            {tools.map((t, i) => (
+              <div
+                key={t.name}
+                className={`tool-pill${visible ? ' tool-pill-in' : ''}`}
+                style={{ '--tp-delay': `${0.4 + i * 0.06}s`, '--tp-color': t.color }}
+              >
+                <span className="tool-dot" />
+                {t.name}
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
 
       <style>{`
-        /* Title reveal */
         .skills-title-wrap {
           opacity: 0; transform: translateY(20px);
           transition: opacity 0.6s ease, transform 0.6s ease;
         }
         .skills-title-wrap.sk-revealed { opacity:1; transform:none; }
 
-        /* Card reveals with stagger */
-        .sk-card-1, .sk-card-2, .sk-card-3 {
+        .sk-card-1, .sk-card-2, .sk-card-3, .sk-card-4 {
           opacity: 0; transform: translateY(30px);
           transition: opacity 0.6s ease, transform 0.6s ease;
         }
         .sk-card-1.sk-revealed { opacity:1; transform:none; transition-delay:0.15s; }
-        .sk-card-2.sk-revealed { opacity:1; transform:none; transition-delay:0.25s; }
-        .sk-card-3.sk-revealed { opacity:1; transform:none; transition-delay:0.38s; }
+        .sk-card-2.sk-revealed { opacity:1; transform:none; transition-delay:0.22s; }
+        .sk-card-3.sk-revealed { opacity:1; transform:none; transition-delay:0.32s; }
+        .sk-card-4.sk-revealed { opacity:1; transform:none; transition-delay:0.4s; }
 
         .skills-grid {
           display: grid;
-          grid-template-columns: 1fr 360px;
+          grid-template-columns: 1fr 340px;
           gap: 20px;
           align-items: start;
+          margin-bottom: 20px;
         }
         .skills-card {
           background: var(--white);
@@ -125,15 +163,17 @@ export default function Skills() {
         }
         .skills-card:hover { box-shadow: 0 10px 36px rgba(217,108,124,0.1); }
         .skills-card-title {
-          font-size: 1.25rem; font-weight: 500;
-          color: var(--charcoal); margin-bottom: 24px;
+          font-size: 1.1rem; font-weight: 500;
+          color: var(--charcoal); margin-bottom: 22px;
+          font-family: 'Cormorant Garamond', serif;
+          letter-spacing: 0.02em;
         }
 
         /* Bars */
-        .skill-bars { display: flex; flex-direction: column; gap: 18px; }
+        .skill-bars { display: flex; flex-direction: column; gap: 15px; }
         .skill-bar-label {
           display: flex; justify-content: space-between;
-          font-size: 14px; color: var(--mid); margin-bottom: 8px;
+          font-size: 13px; color: var(--mid); margin-bottom: 7px;
         }
         .skill-bar-pct { color: var(--light-txt); }
         .skill-bar-track {
@@ -153,29 +193,62 @@ export default function Skills() {
 
         /* Core skills */
         .skills-right { display: flex; flex-direction: column; gap: 20px; }
-        .core-skills { display: flex; flex-direction: column; gap: 10px; }
+        .core-skills { display: flex; flex-direction: column; gap: 8px; }
         .core-skill-item {
           display: flex; align-items: center; gap: 12px;
-          font-size: 14px; color: var(--mid);
+          font-size: 13px; color: var(--mid);
           opacity: 0; transform: translateX(-12px);
           transition: opacity 0.4s ease var(--cs-delay), transform 0.4s ease var(--cs-delay);
         }
         .core-skill-item.core-visible { opacity:1; transform:none; }
         .core-skill-icon {
-          width: 26px; height: 26px; border-radius: 50%;
+          width: 22px; height: 22px; border-radius: 50%;
           background: var(--pink-100);
           display: flex; align-items: center; justify-content: center;
           color: var(--pink-500); flex-shrink: 0;
         }
 
         /* Languages */
-        .lang-list { display: flex; flex-direction: column; gap: 0; }
+        .lang-list { display: flex; flex-direction: column; }
         .lang-item {
           display: flex; justify-content: space-between; align-items: center;
           padding: 12px 0; border-bottom: 1px solid var(--border);
         }
         .lang-item:last-child { border-bottom: none; padding-bottom: 0; }
         .lang-name { font-size: 15px; color: var(--charcoal); }
+
+        /* Tools */
+        .tools-card { width: 100%; }
+        .tools-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .tool-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 13px;
+          font-weight: 500;
+          color: var(--charcoal);
+          background: var(--pink-50);
+          border: 1.5px solid var(--border);
+          border-radius: 50px;
+          padding: 8px 16px;
+          opacity: 0;
+          transform: scale(0.9);
+          transition: opacity 0.35s ease var(--tp-delay), transform 0.35s ease var(--tp-delay), box-shadow 0.2s, border-color 0.2s;
+        }
+        .tool-pill-in { opacity:1 !important; transform:none !important; }
+        .tool-pill:hover {
+          border-color: var(--tp-color);
+          box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .tool-dot {
+          width: 8px; height: 8px; border-radius: 50%;
+          background: var(--tp-color);
+          flex-shrink: 0;
+        }
 
         @media (max-width: 860px) {
           .skills-grid { grid-template-columns: 1fr; }
