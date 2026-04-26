@@ -45,7 +45,7 @@ export default function About() {
               {[
                 'Accounts Payable',
                 'Creditor Reconciliation',
-                'EFT Payments',
+                'Payment Processing',
                 'Invoice Processing',
                 'Bank Reconciliation',
                 'Supplier Relations',

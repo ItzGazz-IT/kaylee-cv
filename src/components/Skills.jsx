@@ -3,7 +3,7 @@ import { useScrollReveal } from '../hooks/useAnimations'
 const techSkills = [
   { name: 'Accounts Payable',       level: 95 },
   { name: 'Invoice Processing',     level: 92 },
-  { name: 'EFT Payments',           level: 92 },
+  { name: 'Payment Runs & Remittances', level: 92 },
   { name: 'Creditor Reconciliation',level: 90 },
   { name: 'Sage Accounting',        level: 90 },
   { name: 'Bank Reconciliation',    level: 86 },
@@ -31,7 +31,7 @@ const tools = [
   { name: 'Microsoft Teams',   color: '#5558af' },
   { name: 'Microsoft PowerPoint', color: '#d24726' },
   { name: 'Google Workspace',  color: '#4285f4' },
-  { name: 'EFT Banking Systems', color: '#d96c7c' },
+  { name: 'Pastel Accounting',   color: '#e8762b' },
   { name: 'Purchase Orders',   color: '#7c5cbf' },
   { name: 'Age Analysis',      color: '#2e8b57' },
 ]
