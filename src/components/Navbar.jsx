@@ -36,8 +36,9 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/kaylee-cv/kaylee-schneider-cv.pdf"
-              download
+              href="/kaylee-cv/cv-print.html?print=1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn--dark navbar__cta"
             >
               Download CV
@@ -62,8 +63,9 @@ export default function Navbar() {
           </a>
         ))}
         <a
-          href="/kaylee-cv/kaylee-schneider-cv.pdf"
-          download
+          href="/kaylee-cv/cv-print.html?print=1"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn btn--dark"
           onClick={close}
           style={{ marginTop: '8px' }}

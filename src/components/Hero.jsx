@@ -69,8 +69,9 @@ export default function Hero() {
               Contact me
             </a>
             <a
-              href="/kaylee-cv/kaylee-schneider-cv.pdf"
-              download
+              href="/kaylee-cv/cv-print.html?print=1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn--outline mag-btn"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
