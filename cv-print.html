@@ -405,6 +405,16 @@
       font-weight: 500;
     }
 
+    .next-page-note {
+      display: none;
+      font-size: 10.5px;
+      color: var(--lite);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
     /* ── Print styles ───────────────────────── */
     @media print {
       @page { size: A4; margin: 12mm 10mm; }
@@ -455,6 +465,17 @@
 
       .exp-item { margin-bottom: 14px; }
       .exp-bullets li { line-height: 1.45; }
+
+      .next-page-note {
+        display: block;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .education-section {
+        break-before: page;
+        page-break-before: always;
+      }
     }
   </style>
 </head>
@@ -653,7 +674,8 @@
       </div>
 
       <!-- Education -->
-      <div>
+      <p class="next-page-note">Education continues on next page</p>
+      <div class="education-section">
         <div class="sec-head">
           <h3>Education</h3>
           <div class="sec-head-line"></div>
