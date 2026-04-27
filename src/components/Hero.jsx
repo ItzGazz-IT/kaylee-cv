@@ -69,7 +69,7 @@ export default function Hero() {
               Contact me
             </a>
             <a
-              href="/kaylee-cv/cv-print.html?print=1"
+              href="/cv-print.html?print=1"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--outline mag-btn"
@@ -108,7 +108,7 @@ export default function Hero() {
         <div className="hero-photo-wrap">
           <div className="hero-photo-frame">
             <img
-              src="/kaylee-cv/profile.jpg"
+              src="/profile.jpg"
               alt="Kaylee Schneider"
               className="hero-photo"
               onLoad={e  => { e.target.nextSibling.style.display = 'none' }}

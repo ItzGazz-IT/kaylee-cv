@@ -37,7 +37,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/kaylee-cv/cv-print.html?print=1"
+              href="/cv-print.html?print=1"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--dark navbar__cta"
@@ -64,7 +64,7 @@ export default function Navbar() {
           </a>
         ))}
         <a
-          href="/kaylee-cv/cv-print.html?print=1"
+          href="/cv-print.html?print=1"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn--dark"
