@@ -407,24 +407,54 @@
 
     /* ── Print styles ───────────────────────── */
     @media print {
-      @page { size: A4; margin: 0; }
+      @page { size: A4; margin: 12mm 10mm; }
 
-      html { font-size: 13px; }
+      html { font-size: 12px; }
+
       body {
-        background: none;
+        margin: 0;
         padding: 0;
+        background: #fff;
         display: block;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .print-bar { display: none !important; }
 
       .page {
-        width: 210mm;
-        min-height: 297mm;
+        width: 100%;
+        min-height: auto;
         box-shadow: none;
         border-radius: 0;
-        page-break-after: avoid;
+        overflow: visible;
+        display: grid;
+        grid-template-columns: 72mm 1fr;
+        break-after: auto;
+        page-break-after: auto;
       }
+
+      .sidebar {
+        padding: 22px 16px 20px;
+        gap: 20px;
+      }
+
+      .main {
+        padding: 26px 24px 22px;
+        gap: 22px;
+      }
+
+      .main-header,
+      .sidebar-section,
+      .sec-head,
+      .exp-item,
+      .edu-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .exp-item { margin-bottom: 14px; }
+      .exp-bullets li { line-height: 1.45; }
     }
   </style>
 </head>
