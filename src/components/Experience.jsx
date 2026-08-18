@@ -2,16 +2,28 @@ import { useScrollReveal } from '../hooks/useAnimations'
 
 const jobs = [
   {
+    title:   'Reception & Office Administration',
+    company: 'Wood-Mizer Africa',
+    location:'Johannesburg',
+    period:  'Jun 2022 – Jul 2025',
+    current: false,
+    bullets: [
+      'Managed front desk operations as the first point of contact for clients and visitors, maintaining a welcoming and professional experience',
+      'Handled a high-volume multi-line phone system, directed calls promptly, and managed enquiries with clarity and professionalism',
+      'Coordinated flights, accommodation and transport for staff and executives while balancing changing schedules and priorities',
+      'Monitored office supplies, maintained meeting rooms and workplace organisation, and supported efficient daily operations',
+    ],
+  },
+  {
     title:   'Finance Division',
     company: 'TRSS 24 Hour Reaction',
     location:'Randburg',
     period:  'Oct 2025 – Present',
     current: true,
     bullets: [
-      'Manage weekly vendor and supplier payment runs in line with approved payment terms and cash flow planning',
-      'Process EFT payments accurately and ensure timely execution to avoid penalties and delays',
-      'Maintain payment schedules and track remittances to ensure suppliers are updated',
-      'Support improvements in internal financial processes to increase efficiency and accuracy',
+      'Manage weekly vendor and supplier payment runs in line with approved terms and cash flow planning',
+      'Process EFT payments accurately and on time, maintain schedules, and track remittances to keep suppliers informed',
+      'Support improvements to internal financial processes, strengthening workflow efficiency and accuracy',
     ],
   },
   {
@@ -21,24 +33,9 @@ const jobs = [
     period:  'Aug 2023 – Jul 2025',
     current: false,
     bullets: [
-      'Processed local and international supplier payments, including EFTs and wire transfers',
-      'Ensured accurate and timely payments while adhering to company policies and cash flow requirements',
-      'Maintained detailed payment schedules and communicated remittance information to vendors',
-      'Assisted in streamlining financial processes to improve workflow and reduce errors',
-    ],
-  },
-  {
-    title:   'Reception & Office Administration',
-    company: 'Wood-Mizer Africa',
-    location:'Johannesburg',
-    period:  'Jun 2022 – Jul 2025',
-    current: false,
-    bullets: [
-      'Managed front desk operations, acting as the first point of contact for clients and visitors',
-      'Handled a high-volume multi-line phone system, directing calls and managing inquiries professionally',
-      'Coordinated travel arrangements including flights, accommodation, and transport for staff and executives',
-      'Monitored and managed office supplies, ensuring stock availability and cost control',
-      'Maintained office organisation, meeting room setup, and overall workplace efficiency',
+      'Processed local and international supplier payments, including EFTs and wire transfers, in line with policy requirements',
+      'Maintained detailed payment schedules and communicated accurate remittance information to vendors',
+      'Helped streamline financial processes to improve workflow and reduce errors',
     ],
   },
   {
@@ -48,7 +45,7 @@ const jobs = [
     period:  'Jun 2021 – May 2022',
     current: false,
     bullets: [
-      'Provided customer service and sales support, assisting clients and handling queries professionally',
+      'Delivered customer service and sales support, assisting clients and handling queries professionally',
       'Processed transactions using POS systems, ensuring accuracy in cash and card payments',
       'Managed stock control, including stock counts, merchandising, and receiving deliveries',
       'Supported administrative functions such as reporting, scheduling, and daily operations',
