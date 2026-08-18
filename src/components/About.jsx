@@ -27,22 +27,22 @@ export default function About() {
           <div className="about-main stagger-1">
             <span className="label">About</span>
             <h2 className="section-title" style={{ marginBottom: '24px' }}>
-              A career built on<br />
-              <em style={{ fontStyle:'italic', color:'var(--pink-500)' }}>precision & trust</em>
+              Professional support built on<br />
+              <em style={{ fontStyle:'italic', color:'var(--pink-500)' }}>service &amp; trust</em>
             </h2>
             <p className="about-body">
-              Detail-oriented Creditors Clerk with hands-on experience in accounts payable,
-              supplier payments, and financial administration across local and international vendors.
-              Proficient in Sage and Microsoft Excel, with a strong focus on accuracy, meeting
-              deadlines, and maintaining positive supplier relationships.
+              Client-focused receptionist and administrative professional with 5+ years of experience
+              across reception, office administration, customer service and finance support. Experienced
+              in managing a high-volume multi-line phone system, directing calls and enquiries professionally,
+              and creating a welcoming first impression for clients and visitors.
             </p>
             <p className="about-body" style={{ marginTop:'18px' }}>
-              Proven ability to manage payment schedules, process high volumes of transactions,
-              and support efficient financial operations — consistently delivering results that
-              keep businesses running smoothly.
+              Highly organised and detail-oriented, with proven ability to coordinate travel and schedules,
+              maintain accurate records, manage competing priorities and support fast-paced daily operations.
+              Fluent in English and Afrikaans and confident using Sage, Microsoft Excel, POS and data-entry tools.
             </p>
             <div className="about-tags">
-              {['Accounts Payable','Sage','Microsoft Excel','Payment Processing','Invoice Processing','Supplier Relations'].map(t => (
+              {['Reception','Call Handling','Customer Service','Office Administration','Microsoft Excel','Data Entry'].map(t => (
                 <span key={t} className="tag">{t}</span>
               ))}
             </div>

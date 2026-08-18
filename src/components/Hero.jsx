@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 
 const ROLES = [
-  'Creditors Clerk',
-  'AP Administrator',
-  'Finance Professional',
-  'Supplier Relations',
+  'Receptionist',
+  'Administrative Professional',
+  'Customer Service',
+  'Office Coordinator',
 ]
 
 function Typewriter() {
@@ -19,8 +19,10 @@ function Typewriter() {
     if (!deleting && text === current) {
       timeout = setTimeout(() => setDeleting(true), 2000)
     } else if (deleting && text === '') {
-      setDeleting(false)
-      setRoleIdx(i => (i + 1) % ROLES.length)
+      timeout = setTimeout(() => {
+        setDeleting(false)
+        setRoleIdx(i => (i + 1) % ROLES.length)
+      }, 0)
     } else {
       const speed = deleting ? 50 : 90
       timeout = setTimeout(() => {
@@ -59,8 +61,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero-tagline">
-            Detail-oriented finance professional with a passion for accuracy,
-            supplier relationships, and efficient financial operations —
+            Client-focused receptionist and administrative professional experienced in
+            high-volume phone handling, customer service and efficient office operations —
             based in Johannesburg, South Africa.
           </p>
 
@@ -69,7 +71,7 @@ export default function Hero() {
               Contact me
             </a>
             <a
-              href="/cv-print.html?print=1"
+              href="/kaylee-schneider-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn--outline mag-btn"
